@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.roullet-plaquiste.fr/sitemap.xml
