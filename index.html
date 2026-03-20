@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah ROULLET - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f0ff;
+        }
+        header {
+            background-color: #0059b3;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            padding-left: 20px;
+            padding-right: 1000px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 120px auto 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        h2#b {
+            color: #0059b3;
+            font-size: 28px;
+            border-bottom: 3px solid #0059b3;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        h2#nb{
+            color: #0059b3;
+            font-size: 28px;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h3{
+            color: #0059b3;
+            font-size: 18px;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #0059b3;
+        }
+        section {
+            text-align: center;
+        }
+        #photo-idd {
+            width: 120px;
+            border: 3px solid #0059b3;
+            border-radius: 20px;
+        }
+
+        #photo-reseau {
+            width: 1200px;
+            border: 3px solid #0059b3;
+            border-radius: 20px;
+        }
+        #photo-sous-int  {
+            display: block;
+            width: 300px;
+            border: 3px solid #0059b3;
+            border-radius: 20px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        
+        hr{
+          color: #0059b3;
+        }
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0059b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-top: 15px;
+        }
+        .download-button:hover {
+            background-color: #003d80;
+        }
+        ul {
+            list-style-position: inside;
+            padding-left: 0;
+            text-align: center;
+        }
+        ul li {
+            margin: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        ol.modal-list {
+            list-style-position: inside;
+            text-align: left;
+            margin: 0;
+            padding-left: 0;
+        }
+
+        ol.modal-list li {
+            margin: 50px;
+            display: block;
+            text-align: left;
+        }
+    
+        .projet-titre {
+            font-weight: bold;
+            color: #0059b3;
+        }
+        .detail-button {
+            background-color: #0059b3;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .detail-button:hover {
+            background-color: #003d80;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modal-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            border-radius: 10px;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover {
+            color: black;
+        }
+
+        strong {
+            color: #0059b3;
+            text-decoration: underline;
+        }
+
+        table td,th{
+            border : solid;
+            border-width: 3px;
+            border-color: #0059b3;
+        }
+
+        table{
+            border-collapse : collapse;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mon Portfolio</h1>
+        <nav>
+            <a href="#apropos">À propos</a>
+            <a href="#projets">Projets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 id="b">À propos de moi :</h2>
+        <section id="apropos">
+            <h3>Noah ROULLET</h3>
+            <img src="images/photo-idd.png" alt="Photo d'identité" id="photo-idd">
+            <p>Etudiant à l'IUT de Blois</p>
+            <p>BUT Réseaux et Télécommunication</p>
+            <p>Bac STI2D option SIN. Mention Bien</p>
+            <h2 id="nb">Mon CV :</h2>
+            <a class="download-button" href="images/CV-ROULLET-Noah.pdf" target="_blank">Ouvrir mon CV (PDF)</a>
+        </section>
+
+        <h2 id="b">Mes Projets :</h2>
+        <section id="projets">
+            <ul id="projets-list">
+                <li><span class="projet-titre">Projet 1 :</span> SAE201 - Conception du réseau informatique d'une entreprise <button class="detail-button" onclick="openModal('modal1')">Voir plus de détail</button></li>
+                <li><span class="projet-titre">Projet 2 :</span> Rien pour l'instant <button class="detail-button" onclick="openModal('modal2')">Voir plus de détail</button></li>
+                <li><span class="projet-titre">Projet 3 :</span> Rien pour l'instant <button class="detail-button" onclick="openModal('modal3')">Voir plus de détail</button></li>
+            </ul>
+        </section>
+
+        <h2 id="b">Contact :</h2>
+        <section id="contact">
+            <p>Email : noahroullet@icloud.com</p>
+            <p>LinkedIn : <a href="https://www.linkedin.com/in/noah-roullet" target="_blank">Mon profil LinkedIn</a></p>
+        </section>
+    </div>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2 id="b">SAE201 - Conception du réseau informatique d'une entreprise</h1>
+
+  <h2 id="nb">Contexte et objectifs du projet</h2>
+  <p>Dans le cadre de mon BUT Réseaux & Télécommunications (semestre 2), j'ai conçu, déployé et sécurisé le réseau informatique complet d'une entreprise fictive. Ce projet m'a permis de mobiliser l'ensemble des compétences acquises en architecture réseau, configuration des services, sécurité, routage et interconnexion avec un fournisseur d'accès à Internet (FAI).</p>
+
+  <h2 id="nb">Architecture du réseau</h2>
+  <p>Le réseau se compose de trois grandes parties : l'entreprise, le FAI et l'extérieur (Internet).</p>
+  <ol class="modal-list">
+    <li><strong>Entreprise :</strong> Salle ADMIN (serveurs DNS, DHCP, TFTP, Intranet, PC Admin), Salle VLAN (VLAN 10, 20, 30), Salle VLSM (/29), Salle de réunion Wi-Fi (client DHCP), DMZ (serveurs Web et DNS), Switches en redondance (spanning-tree).</li>
+    <li><strong>FAI :</strong> Serveurs DNS, Web et client test.</li>
+    <li><strong>Internet :</strong> Serveur DNS racine externe (.fr).</li>
+  </ol>
+  <h2 id="nb">Schéma du réseau global</h2>
+  <img src="images/reseau.png" alt="photo du réseau de la SAE201" id="photo-reseau">
+
+  <h2 id="nb">Principales étapes de conception et configuration</h2>
+  <h3>Adressage et interconnexion</h3>
+  <p>Découpage IP (privé et public), configuration des routes statiques sur chaque routeur pour interconnecter tous les réseaux.</p>
+
+  <h3>Routage inter-VLAN</h3>
+  <p>Sous-interfaces, trunks sur switches, spanning-tree avec priorité pour définir le switch ROOT.</p>
+  <img src="images/sous-interface.png" alt="photo d'illustration de sous interfaces" id="photo-sous-int">
+
+  <h3>Services réseau</h3>
+  <ol class="modal-list">
+    <li><strong>DHCP :</strong> donne une configuration IP à certain client.</li>
+    <li><strong>HTTP :</strong> accéder au serveur Web de l'entreprise ou de l'entreprise.</li>
+    <li><strong>DNS :</strong> faire une résolution de nom pour accéder au page du serveur web.</li>
+    <li><strong>SSH :</strong> administre à distance les équipements d'interconnexion de façon sécurisé.</li>
+    <li><strong>TFTP:</strong> sauvegarde la configuration courante des switches et routeur de l'entreprise.</li>
+  </ol>
+<h2 id="nb">Apprentissages Critiques et Compétences développées</h2>
+<table>
+  <tr>
+    <th>Apprentissage Critique</th>
+    <th>Description</th>
+    <th>Compétences développées</th>
+  </tr>
+  <tr>
+    <td>AC11.02</td>
+    <td>Comprendre l’architecture et les fondements des systèmes numériques, les principes du codage de l’information, des communications et de l’Internet</td>
+    <td>J’ai appris à concevoir un réseau et à comprendre comment les équipements communiquent entre eux.</td>
+  </tr>
+  <tr>
+    <td>AC11.03</td>
+    <td>Configurer les fonctions de base du réseau local</td>
+    <td>Configuration des VLANs, routage inter-VLAN, DHCP, DNS, NAT, TFTP, ACL</td>
+  </tr>
+  <tr>
+    <td>AC11.04</td>
+    <td>Maîtriser les rôles et les principes fondamentaux des systèmes d’exploitation afin d’interagir avec ceux-ci pour la configuration et l’administration des réseaux et services fournis</td>
+    <td>Installation et configuration des serveurs DNS, DHCP, TFTP, Web, SSH</td>
+  </tr>
+  <tr>
+    <td>AC11.05</td>
+    <td>Identifier les dysfonctionnements du réseau local et les signaler</td>
+    <td>Tests de connectivité (ping, traceroute), supervision, débogage des services</td>
+  </tr>
+  <tr>
+    <td>AC11.06</td>
+    <td>Installer un poste client, expliquer la procédure mise en place</td>
+    <td>Installation d'un poste client et rédaction des étapes nécessaires pour le connecter au réseau et configurer les services.</td>
+  </tr>
+</table>
+
+  <h2 id="nb">Bilan du projet</h2>
+  <p>Ce projet m'a permis de réaliser une maquette réseau complète et fonctionnelle, 
+    intégrant les services internes, les accès sécurisés et les interconnexions avec Internet. 
+    J'ai ainsi pu mettre en œuvre l'ensemble des savoirs acquis durant mes premiers semestres du BUT Réseaux et Télécommunications.
+  </p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h3>Projet 2 : Rien pour l'instant</h3>
+            <p>Je n'ai pas de deuxième projet à présenter pour le moment. Merci de votre compréhension.</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h3>Projet 3 : Rien pour l'instant</h3>
+            <p>Je n'ai pas de troisième projet à présenter pour le moment. Merci de votre compréhension.</p>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = 'block';
+        }
+        function closeModal(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
